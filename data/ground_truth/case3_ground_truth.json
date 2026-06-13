@@ -1,0 +1,6 @@
+{
+  "expected_findings": [
+    "PowerShell execution detected",
+    "Persistence mechanism detected"
+  ]
+}

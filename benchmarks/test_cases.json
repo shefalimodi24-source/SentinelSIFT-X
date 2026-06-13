@@ -1,0 +1,25 @@
+[
+    {
+      "name": "PowerShell Attack",
+      "case_data": "powershell.exe launched event id 4688",
+      "expected_findings": [
+        "PowerShell execution detected"
+      ]
+    },
+    {
+      "name": "Persistence Attack",
+      "case_data": "autorun registry entry detected",
+      "expected_findings": [
+        "Persistence mechanism detected"
+      ]
+    },
+    {
+      "name": "Combined Attack",
+      "case_data": "powershell.exe launched event id 4688 autorun registry entry detected",
+      "expected_findings": [
+        "PowerShell execution detected",
+        "Persistence mechanism detected"
+      ]
+    }
+  ]
+  

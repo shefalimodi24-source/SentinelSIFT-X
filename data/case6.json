@@ -1,0 +1,10 @@
+{
+  "case_id": "CASE-006",
+  "hostname": "DESKTOP-006",
+  "artifacts": [
+    "benign powershell.exe reference in administrator notes",
+    "event id 4688 for notepad.exe",
+    "autorun registry entry",
+    "misleading artifact: powershell training document copied to desktop"
+  ]
+}

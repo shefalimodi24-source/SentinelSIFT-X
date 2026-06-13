@@ -1,0 +1,8 @@
+{
+    "case_id": "CASE-002",
+    "hostname": "DESKTOP-002",
+    "artifacts": [
+      "autorun registry entry"
+    ]
+  }
+  

@@ -1,0 +1,9 @@
+{
+    "case_id": "CASE-001",
+    "hostname": "DESKTOP-001",
+    "artifacts": [
+      "powershell.exe launched",
+      "event id 4688"
+    ]
+  }
+  

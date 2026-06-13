@@ -1,0 +1,8 @@
+{
+  "case_id": "CASE-004",
+  "hostname": "DESKTOP-004",
+  "artifacts": [
+    "benign administrative powershell.exe launched for inventory collection",
+    "event id 4688"
+  ]
+}

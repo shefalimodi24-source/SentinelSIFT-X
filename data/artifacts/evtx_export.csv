@@ -1,0 +1,3 @@
+EventId,Provider,TimeCreated,Image,CommandLine
+4688,Microsoft-Windows-Security-Auditing,2026-06-08T10:13:00Z,powershell.exe,powershell.exe -ExecutionPolicy Bypass
+7045,Service Control Manager,2026-06-08T10:14:00Z,cmd.exe,service install detected
