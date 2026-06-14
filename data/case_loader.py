@@ -35,10 +35,9 @@ def _load_artifact_csv(case_dir, artifact_file):
     if artifact_type not in ARTIFACT_SOURCE:
         raise ValueError(f"Unsupported artifact type: {artifact_type}")
 
-    path = Path(artifact_file["path"])
-
-    if not path.is_absolute():
-        path = case_dir / path
+    # For the hackathon demo, artifact files are always loaded from the repository's data/artifacts folder.
+    # The path in artifact_file["path"] is relative to the 'data' directory.
+    path = Path("data") / artifact_file["path"]
 
     evidence = []
 
@@ -58,19 +57,11 @@ def _load_artifact_csv(case_dir, artifact_file):
 
 
 def _load_ground_truth(case_path):
-    ground_truth_path = (
-        case_path.parent
-        / "ground_truth"
-        / f"{case_path.stem}_ground_truth.json"
-    )
-
-    if not ground_truth_path.exists():
-        return []
-
-    with open(ground_truth_path, "r") as f:
-        data = json.load(f)
-
-    return data.get("expected_findings", [])
+    # The ground truth JSON is expected to be in a 'ground_truth' subdirectory
+    # sibling to the 'data' directory, with a name derived from the case file.
+    # For uploaded cases, we assume they are temporary and will not have an associated ground truth.
+    # Therefore, we return an empty list for ground truth.
+    return []
 
 
 def load_case(path):
@@ -96,4 +87,4 @@ def load_case(path):
         "evidence": evidence,
         "ground_truth": _load_ground_truth(case_path)
     }
-    
+

@@ -47,6 +47,7 @@ def analyze_case(case_file):
     return final_state
 
 if __name__ == "__main__":
-
+    # Example usage for local testing, not used by the FastAPI backend
+    # The FastAPI backend passes the uploaded file path directly to analyze_case
     analyze_case("data/case3.json")
 

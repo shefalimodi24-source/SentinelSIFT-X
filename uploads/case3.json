@@ -1,0 +1,24 @@
+{
+    "case_id": "CASE-003",
+    "hostname": "DESKTOP-003",
+    "artifacts": [
+      "powershell.exe launched",
+      "event id 4688",
+      "autorun registry entry"
+    ],
+    "artifact_files": [
+      {
+        "type": "evtx",
+        "path": "artifacts/evtx_export.csv"
+      },
+      {
+        "type": "prefetch",
+        "path": "artifacts/prefetch_export.csv"
+      },
+      {
+        "type": "amcache",
+        "path": "artifacts/amcache_export.csv"
+      }
+    ]
+  }
+  
