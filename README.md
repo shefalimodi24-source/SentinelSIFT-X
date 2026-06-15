@@ -4,6 +4,14 @@ SentinelSIFT-X is an autonomous Digital Forensics and Incident Response (DFIR) i
 
 The system uses a multi-agent architecture inspired by the SIFT methodology to analyze forensic evidence, correlate findings, verify conclusions, and generate investigation reports.
 
+## Demo 
+
+1. Open the demo URL (https://sentinelsift-x-dashboard.vercel.app) 
+2. Upload one of the provided sample case files from the dataset (e.g., case3.json).
+{The dataset can be accessed from https://github.com/shefalimodi24-source/SentinelSIFT-X , under data , where json files like case3.json , case2.json etc are present}
+3. Click "Start Investigation".
+4. Review the generated findings, investigation workflow, evidence explorer, and final report.
+
 ## Architecture
 
 SentinelSIFT-X consists of specialized agents:
@@ -143,20 +151,6 @@ Tool Selection Agent
       |
       v
 Investigation Report
-```
-
-## Demo
-
-Frontend:
-
-```text
-https://sentinelsift-x-dashboard.vercel.app
-```
-
-Backend:
-
-```text
-https://sentinelsift-x-production.up.railway.app
 ```
 
 ## License
